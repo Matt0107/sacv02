@@ -1,0 +1,17 @@
+{
+    "nav": {
+      "home": "Accueil",
+      "tennis": "Tennis",
+      "coding": "Développement",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Bienvenue sur Serve and Code",
+      "subtitle": "Réunir deux passions : le tennis et le développement web"
+    },
+    "presentation": {
+      "title": "À propos",
+      "content": "Serve and Code est une plateforme dédiée à l'enseignement du tennis et au développement web."
+    }
+  }
+  
