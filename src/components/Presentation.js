@@ -1,15 +1,17 @@
+// src/components/Presentation.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import '../styles/Presentation.css';
 
-const Presentation = () => {
-  const { t } = useTranslation();
+function Presentation() {
+    const { t } = useTranslation();
 
-  return (
-    <section className="presentation">
-      <h2>{t('presentation.title')}</h2>
-      <p>{t('presentation.content')}</p>
-    </section>
-  );
-};
+    return (
+        <section className="presentation">
+            <h2>{t('presentation.title')}</h2>
+            <p>{t('presentation.description')}</p>
+        </section>
+    );
+}
 
 export default Presentation;

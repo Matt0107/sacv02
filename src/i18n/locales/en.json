@@ -1,16 +1,28 @@
 {
-    "nav": {
+  "navbar": {
+      "title": "Serve & Code",
       "home": "Home",
-      "tennis": "Tennis",
-      "coding": "Development",
+      "coding": "Web Development",
+      "tennis": "Tennis Coaching",
       "contact": "Contact"
-    },
-    "hero": {
-      "title": "Welcome to Serve and Code",
-      "subtitle": "Bringing together two passions: tennis and web development"
-    },
-    "presentation": {
-      "title": "About Us",
-      "content": "Serve and Code is a platform dedicated to teaching tennis and web development."
-    }
+  },
+  "hero": {
+      "welcome": "Welcome to our site",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula id velit suscipit, in aliquet justo sollicitudin."
+  },
+  "presentation": {
+      "title": "Our Vision",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum."
+  },
+  "coding": {
+      "title": "Web Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu."
+  },
+  "tennis": {
+      "title": "Tennis Coaching",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus."
+  },
+  "footer": {
+      "rights": "© 2023 Serve & Code - All rights reserved"
+  }
 }

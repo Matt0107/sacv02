@@ -1,16 +1,38 @@
+/* src/styles/Tennis.css */
 .tennis {
-    padding: 4em 2em;
-    text-align: center;
-    color: #e0e0e0;
-  }
-  
+  padding: 2rem;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+.tennis h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #28A745;
+}
+
+.tennis p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* Tablet */
   .tennis h2 {
-    font-size: 2em;
-    color: #0f0;
+      font-size: 24px;
   }
-  
   .tennis p {
-    font-size: 1em;
-    color: #bbb;
+      font-size: 14px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .tennis h2 {
+      font-size: 20px;
+  }
+  .tennis p {
+      font-size: 13px;
+  }
+}

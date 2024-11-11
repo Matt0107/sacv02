@@ -1,0 +1,37 @@
+/* src/styles/Presentation.css */
+.presentation {
+    padding: 2rem;
+    text-align: center;
+}
+
+.presentation h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #28A745;
+}
+
+.presentation p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Tablet */
+    .presentation h2 {
+        font-size: 26px;
+    }
+    .presentation p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile */
+    .presentation h2 {
+        font-size: 22px;
+    }
+    .presentation p {
+        font-size: 13px;
+    }
+}

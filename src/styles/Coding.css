@@ -1,0 +1,38 @@
+/* src/styles/Coding.css */
+.coding {
+    background-color: #F2F2F2;
+    padding: 2rem;
+    text-align: left;
+}
+
+.coding h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #1E90FF;
+}
+
+.coding p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Tablet */
+    .coding h2 {
+        font-size: 24px;
+    }
+    .coding p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile */
+    .coding h2 {
+        font-size: 20px;
+    }
+    .coding p {
+        font-size: 13px;
+    }
+}
