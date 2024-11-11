@@ -18,8 +18,6 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            <button onClick={() => changeLanguage('en')}>EN</button>
-            <button onClick={() => changeLanguage('fr')}>FR</button>
             <Hero />
             <Presentation />
             <Coding />
