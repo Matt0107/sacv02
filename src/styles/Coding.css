@@ -1,4 +1,5 @@
 /* src/styles/Coding.css */
+
 .coding {
     background-color: #F2F2F2;
     padding: 2rem;
@@ -6,19 +7,19 @@
 }
 
 .coding h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 28px;
     color: #1E90FF;
 }
 
 .coding p {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     color: #333333;
 }
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
-    /* Tablet */
     .coding h2 {
         font-size: 24px;
     }
@@ -28,7 +29,6 @@
 }
 
 @media (max-width: 768px) {
-    /* Mobile */
     .coding h2 {
         font-size: 20px;
     }
