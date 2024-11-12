@@ -29,7 +29,6 @@ function Navbar() {
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
-                <h1 className="navbar-title">{t('navbar.title')}</h1>
                 <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
                     <a href="#home">{t('navbar.home')}</a>
                     <a href="#coding">{t('navbar.coding')}</a>

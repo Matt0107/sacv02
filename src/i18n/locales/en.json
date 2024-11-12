@@ -1,14 +1,12 @@
 {
   "navbar": {
-      "title": "Serve & Code",
       "home": "Home",
       "coding": "Web Development",
       "tennis": "Tennis Coaching",
       "contact": "Contact"
   },
   "hero": {
-      "welcome": "Welcome to our site",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula id velit suscipit, in aliquet justo sollicitudin."
+      "welcome": "Welcome to our site"
   },
   "presentation": {
       "title": "Our Vision",
@@ -23,6 +21,6 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus."
   },
   "footer": {
-      "rights": "© 2023 Serve & Code - All rights reserved"
+      "rights": "© 2024 Serve & Code - All rights reserved"
   }
 }

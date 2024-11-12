@@ -1,28 +1,83 @@
 {
   "navbar": {
-      "title": "Serve & Code",
       "home": "Accueil",
       "coding": "Développement Web",
       "tennis": "Coaching Tennis",
       "contact": "Contact"
   },
   "hero": {
-      "welcome": "Bienvenue sur notre site",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula id velit suscipit, in aliquet justo sollicitudin."
+      "welcome": "Bienvenue sur notre site"
+      
   },
   "presentation": {
       "title": "Notre Vision",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum."
   },
   "coding": {
-      "title": "Développement Web",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu."
-  },
-  "tennis": {
-      "title": "Coaching Tennis",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus."
+    "title": "Nos Services en Développement Digital",
+    "subtitle": "Des solutions adaptées pour la réussite de vos projets numériques",
+    "services": [
+        {
+            "title": "Gestion de projets digitaux",
+            "description": "Coordination de projets web, applications mobiles, et plateformes digitales pour répondre aux besoins stratégiques."
+        },
+        {
+            "title": "Conception graphique & webdesign",
+            "description": "Création de logos, chartes graphiques, maquettes web, et designs modernes pour une identité visuelle forte."
+        },
+        {
+            "title": "Développement sur mesure",
+            "description": "Développement de solutions personnalisées adaptées aux spécificités de chaque projet, incluant des applications et des outils sur mesure."
+        },
+        {
+            "title": "Intégration web",
+            "description": "Intégration de maquettes en HTML/CSS et JavaScript pour des sites performants, modernes et responsives."
+        },
+        {
+            "title": "Optimisation SEO",
+            "description": "Amélioration de la visibilité sur les moteurs de recherche grâce à un référencement naturel et des pages optimisées."
+        },
+        {
+            "title": "Développement Frontend et Backend",
+            "description": "Développement côté client et côté serveur pour des sites web dynamiques, sécurisés et performants."
+        },
+        {
+            "title": "Maintenance et support",
+            "description": "Suivi et maintenance des projets post-lancement pour garantir leur pérennité et répondre aux besoins évolutifs."
+        },
+        {
+            "title": "Responsive Design",
+            "description": "Conception de sites et applications adaptatifs pour une expérience utilisateur optimale sur tous les appareils."
+        }
+    ]
+},
+"tennis": {
+    "title": "Coaching et Entraînement en Tennis",
+    "subtitle": "Des services d'accompagnement pour tous les niveaux",
+    "services": [
+      {
+        "title": "Analyse des techniques",
+        "description": "Évaluation des coups, de la posture et de la technique pour un perfectionnement sur mesure."
+      },
+      {
+        "title": "Stratégie de jeu",
+        "description": "Conseils tactiques pour mieux lire le jeu, anticiper et optimiser les performances."
+      },
+      {
+        "title": "Entraînement mental",
+        "description": "Développement de la résilience mentale pour mieux gérer le stress et rester concentré."
+      },
+      {
+        "title": "Sessions individuelles",
+        "description": "Coaching individuel pour un suivi personnalisé et adapté aux besoins de chaque joueur."
+      },
+      {
+        "title": "Entraînements en groupe",
+        "description": "Sessions en groupe pour travailler la cohésion et l'esprit d'équipe tout en s'amusant."
+      }
+    ]
   },
   "footer": {
-      "rights": "© 2023 Serve & Code - Tous droits réservés"
+      "rights": "© 2024 Serve & Code - Tous droits réservés"
   }
 }

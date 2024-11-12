@@ -75,7 +75,7 @@
 
 /* Effet de défilement */
 .navbar.scrolled {
-    background-color: #1E90FF; /* Bleu de la charte graphique */
+    background-color: rgba(255, 248, 240, 0.8); /* Blanc cassé avec transparence */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
