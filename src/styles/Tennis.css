@@ -89,7 +89,7 @@
   color: #fff;
   margin: 0;
   position: relative;
-  display: inline-block; /* Permet de limiter le soulignement à la longueur du texte */
+  display: inline-block;
 }
 
 .tennis-service-title::after {
@@ -104,9 +104,8 @@
 }
 
 .tennis-service-title:hover::after {
-  width: 100%; /* Le soulignement s’étend uniquement sur la longueur du texte */
+  width: 100%;
 }
-
 
 .tennis-service-description {
   font-size: 16px;
@@ -115,19 +114,44 @@
   line-height: 1.6;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for smartphone */
 @media (max-width: 768px) {
   .tennis-content {
       flex-direction: column;
       align-items: center;
-  }
-
-  .tennis-services-column {
-      align-items: center;
+      gap: 20px; /* Ajoute de l'espace entre l'image et les services */
   }
 
   .tennis-image {
-      max-width: 100%;
-      margin: 20px 0;
+      max-width: 100%; /* L'image prend toute la largeur en mode mobile */
+      margin-bottom: 20px; /* Espace entre l'image et les services */
+  }
+
+  .tennis-services-column {
+      width: 100%; /* Assure que les services occupent toute la largeur */
+      align-items: center;
+  }
+
+  .tennis-service-card {
+      width: 100%;
+      flex-direction: row; /* Les services restent en ligne pour la lisibilité */
+      justify-content: center;
+      padding: 15px 0; /* Ajoute de l'espace entre les services */
+  }
+
+  .tennis-title {
+      font-size: 28px;
+  }
+
+  .tennis-subtitle {
+      font-size: 20px;
+  }
+
+  .tennis-service-title {
+      font-size: 18px;
+  }
+
+  .tennis-service-description {
+      font-size: 14px;
   }
 }
