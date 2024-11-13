@@ -1,82 +1,110 @@
-.tennis {
+/* src/styles/Tennis.css */
+
+.tennis-section {
+  background-color: #111; /* Fond sombre pour un contraste avec l'image et le texte */
+  color: #fff;
   padding: 60px 20px;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-.tennis-icon {
-  color: #4CAF50; /* Couleur verte pour Tennis */
-  font-size: 40px; /* Taille des icônes */
-  margin-bottom: 15px;
 }
 
+.tennis-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+}
+
+.tennis-image {
+  flex: 1;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.tennis-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tennis-content {
+  flex: 1;
+  padding: 0 20px;
+}
 
 .tennis-title {
   font-size: 36px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  color: #333333;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .tennis-subtitle {
-  font-size: 18px;
-  color: #666666;
-  margin-bottom: 40px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.services-container {
+.tennis-services-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
 }
 
-.service-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+.tennis-service-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+  color: #ddd;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
+.tennis-service-icon {
+  font-size: 36px;
+  color: #4CAF50; /* Couleur verte pour les icônes de tennis */
+  margin-right: 15px;
 }
 
-.service-icon {
-  font-size: 40px; /* Taille des icônes */
-  color: #4CAF50; /* Couleur des icônes pour le tennis */
-  margin-bottom: 15px;
-}
-
-.service-title {
+.tennis-service-title {
   font-size: 20px;
-  color: #333333;
-  margin-bottom: 10px;
+  color: #fff;
+  margin: 0;
 }
 
-.service-description {
+.tennis-service-description {
   font-size: 16px;
-  color: #666666;
+  color: #aaa;
+  margin: 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .tennis h2 {
-      font-size: 24px;
-  }
-  .tennis p {
-      font-size: 14px;
-  }
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .tennis h2 {
+  .tennis-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .tennis-image {
+      max-width: 100%;
+  }
+
+  .tennis-content {
+      padding: 20px;
+  }
+
+  .tennis-title {
+      font-size: 28px;
+  }
+
+  .tennis-subtitle {
       font-size: 20px;
   }
-  .tennis p {
-      font-size: 13px;
+
+  .tennis-service-title {
+      font-size: 18px;
+  }
+
+  .tennis-service-description {
+      font-size: 14px;
   }
 }

@@ -11,8 +11,8 @@ function App() {
         <div className="App">
             <Navbar />
             <HeroCarousel />
-            <Coding />
             <Tennis />
+            <Coding />
             <Footer />
         </div>
     );

@@ -1,9 +1,8 @@
-// src/components/Hero.js
+// src/components/HeroCarousel.js
 import React, { useState, useEffect } from 'react';
 import '../styles/HeroCarousel.css';
 
-// Importez les images directement
-import homeImage from '../assets/home.png';
+import homeImage from '../assets/home.jpg';
 import testImage from '../assets/test2.jpg';
 
 function HeroCarousel() {
@@ -20,17 +19,12 @@ function HeroCarousel() {
         }
     ];
 
-    // Changement de diapositive automatique toutes les 5 secondes
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
         }, 5000);
         return () => clearInterval(interval);
-    }, [images.length]);
-
-    const goToSlide = (index) => {
-        setCurrentSlide(index);
-    };
+    }, []);
 
     return (
         <section className="hero-carousel">
@@ -40,20 +34,11 @@ function HeroCarousel() {
                     className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
                     style={{ backgroundImage: `url(${image.src})` }}
                 >
-                    <div className="carousel-content">
-                        <h2>{image.title}</h2>
+                    <div className="carousel-title-container">
+                        <h2 className="carousel-title">{image.title}</h2>
                     </div>
                 </div>
             ))}
-            <div className="carousel-controls">
-                {images.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`carousel-indicator ${index === currentSlide ? 'active' : ''}`}
-                        onClick={() => goToSlide(index)}
-                    ></span>
-                ))}
-            </div>
         </section>
     );
 }
