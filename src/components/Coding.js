@@ -13,11 +13,8 @@ function Coding() {
     // Liste des icônes correspondantes pour chaque service
     const icons = [
         <FaProjectDiagram className="coding-icon" />, // Gestion de projets digitaux
-        <FaPaintBrush className="coding-icon" />,      // Conception graphique & webdesign
         <FaCode className="coding-icon" />,            // Développement sur mesure
-        <FaHtml5 className="coding-icon" />,           // Intégration web
         <FaSearch className="coding-icon" />,          // Optimisation SEO
-        <FaServer className="coding-icon" />,          // Développement Frontend et Backend
         <FaTools className="coding-icon" />,           // Maintenance et support
         <FaMobileAlt className="coding-icon" />        // Responsive Design
     ];
