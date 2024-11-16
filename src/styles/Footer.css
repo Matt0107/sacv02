@@ -9,6 +9,23 @@
     font-size: 14px;
 }
 
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacement entre les icônes */
+}
+
+.footer-icon {
+    font-size: 30px; /* Taille des icônes */
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #FFD700; /* Couleur au survol */
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .footer {

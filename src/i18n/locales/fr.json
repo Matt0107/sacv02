@@ -9,12 +9,8 @@
       "welcome": "Bienvenue sur notre site"
       
   },
-  "presentation": {
-      "title": "Notre Vision",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum."
-  },
   "coding": {
-    "title": "Nos Services en Développement Digital",
+    "title": "Mes Services en Développement Digital",
     "subtitle": "Des solutions adaptées pour la réussite de vos projets numériques",
     "services": [
         {

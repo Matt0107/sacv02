@@ -1,82 +1,139 @@
-.coding {
-    padding: 60px 20px;
-    text-align: center;
+/* src/styles/Coding.css */
+
+.coding-section {
     background-color: #f9f9f9;
-}
-.coding-icon {
-    color: #FF6B6B; /* Couleur rouge pour Coding */
-    font-size: 40px; /* Taille des icônes */
-    margin-bottom: 15px;
-}
-
-
-.coding-title {
-    font-size: 36px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.coding-subtitle {
-    font-size: 18px;
-    color: #666666;
+    color: #333;
+    padding: 60px 20px;
+  }
+  
+  .coding-header {
+    text-align: center;
     margin-bottom: 40px;
-}
-
-.services-container {
+  }
+  
+  .coding-title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .coding-subtitle {
+    font-size: 22px;
+    color: #666666;
+    margin-top: 10px;
+  }
+  
+  .coding-content {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .coding-services-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-}
-
-.service-card {
-    background-color: white;
+  }
+  
+  .coding-image {
+    flex: 1;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .coding-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .coding-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  .coding-service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
-.service-icon {
-    font-size: 40px;
-    color: #FF6B6B; /* Vous pouvez remplacer par un vrai icône SVG ou image */
-    margin-bottom: 15px;
-}
-
-.service-title {
+  }
+  
+  .coding-service-card:hover {
+    transform: translateX(10px);
+  }
+  
+  .coding-service-icon {
+    font-size: 36px;
+    color: #FF6B6B;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .coding-service-icon:hover {
+    color: #e63946;
+    transform: scale(1.1);
+  }
+  
+  .coding-service-title {
     font-size: 20px;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.service-description {
+    color: #333;
+    margin: 0;
+  }
+  
+  .coding-service-description {
     font-size: 16px;
-    color: #666666;
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .coding h2 {
-        font-size: 24px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .coding-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
-    .coding p {
+  
+    .coding-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .coding-services-column {
+        align-items: center;
+    }
+  
+    .coding-service-card {
+        width: 100%;
+        text-align: center;
+    }
+  
+    .coding-title {
+        font-size: 28px;
+    }
+  
+    .coding-subtitle {
+        font-size: 18px;
+    }
+  
+    .coding-service-title {
+        font-size: 18px;
+    }
+  
+    .coding-service-description {
         font-size: 14px;
     }
-}
-
-@media (max-width: 768px) {
-    .coding h2 {
-        font-size: 20px;
-    }
-    .coding p {
-        font-size: 13px;
-    }
-}
+  }
+  

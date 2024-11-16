@@ -1,41 +1,72 @@
 // src/components/Coding.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaProjectDiagram, FaPaintBrush, FaCode, FaHtml5, FaSearch, FaServer, FaTools, FaMobileAlt } from 'react-icons/fa';
+import { FaProjectDiagram, FaCode, FaHtml5, FaCropAlt, FaServer, FaTools, FaMobileAlt } from 'react-icons/fa';
 import '../styles/Coding.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import codingImage from '../assets/coding.jpg';
 
 function Coding() {
-    const { t } = useTranslation();
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    }, []);
 
-    // Charger les services à partir du fichier JSON
+    const { t } = useTranslation();
     const services = t('coding.services', { returnObjects: true });
 
-    // Liste des icônes correspondantes pour chaque service
     const icons = [
-        <FaProjectDiagram className="coding-icon" />, // Gestion de projets digitaux
-        <FaCode className="coding-icon" />,            // Développement sur mesure
-        <FaSearch className="coding-icon" />,          // Optimisation SEO
-        <FaTools className="coding-icon" />,           // Maintenance et support
-        <FaMobileAlt className="coding-icon" />        // Responsive Design
+        <FaProjectDiagram className="coding-service-icon" />,
+        <FaCropAlt className="coding-service-icon" />,
+        <FaCode className="coding-service-icon" />,
+        <FaHtml5 className="coding-service-icon" />,
+        <FaMobileAlt className="coding-service-icon" />,
+        <FaServer className="coding-service-icon" />,
+        <FaTools className="coding-service-icon" />,
+        <FaMobileAlt className="coding-service-icon" />
     ];
 
-    if (!Array.isArray(services)) {
-        console.error('Les services ne sont pas récupérés correctement comme tableau.');
-        return null;
-    }
+    const leftServices = services.slice(0, Math.ceil(services.length / 2));
+    const rightServices = services.slice(Math.ceil(services.length / 2));
 
     return (
-        <section className="coding">
-            <h2 className="coding-title">{t('coding.title')}</h2>
-            <p className="coding-subtitle">{t('coding.subtitle')}</p>
-            <div className="services-container">
-                {services.map((service, index) => (
-                    <div key={index} className="service-card">
-                        <div className="service-icon">{icons[index]}</div>
-                        <h3 className="service-title">{service.title}</h3>
-                        <p className="service-description">{service.description}</p>
-                    </div>
-                ))}
+        <section className="coding-section">
+            <div className="coding-header">
+                <h2 className="coding-title">{t('coding.title')}</h2>
+                <p className="coding-subtitle">{t('coding.subtitle')}</p>
+            </div>
+
+            <div className="coding-content">
+                <div className="coding-services-column" data-aos="fade-right">
+                    {leftServices.map((service, index) => (
+                        <div key={index} className="coding-service-card">
+                            <div className="coding-service-icon">{icons[index]}</div>
+                            <div>
+                                <h3 className="coding-service-title">{service.title}</h3>
+                                <p className="coding-service-description">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="coding-image" data-aos="zoom-in">
+                    <img src={codingImage} alt="Coding services and solutions" />
+                </div>
+
+                <div className="coding-services-column" data-aos="fade-left">
+                    {rightServices.map((service, index) => (
+                        <div key={index} className="coding-service-card">
+                            <div className="coding-service-icon">{icons[index + leftServices.length]}</div>
+                            <div>
+                                <h3 className="coding-service-title">{service.title}</h3>
+                                <p className="coding-service-description">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
