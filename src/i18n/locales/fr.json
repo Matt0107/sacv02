@@ -6,7 +6,7 @@
       "contact": "Contact"
   },
   "hero": {
-      "welcome": "Bienvenue sur notre site"
+      "welcome": "Bienvenue"
       
   },
   "coding": {
@@ -36,8 +36,8 @@
     ]
 },
 "tennis": {
-    "title": "Coaching et Entraînement en Tennis",
-    "subtitle": "Des services d'accompagnement pour tous les niveaux",
+    "title": "Construisez Votre Réussite",
+    "subtitle": "Un service d'accompagnement pour tous les niveaux",
     "services": [
       {
         "title": "Analyse technique",

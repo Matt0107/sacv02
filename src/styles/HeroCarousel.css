@@ -1,96 +1,64 @@
-/* src/styles/HeroCarousel.css */
-
+/* Hero Carousel Styling */
 .hero-carousel {
   position: relative;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
-.carousel-slide {
+/* Overlay for background darkening */
+.carousel-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 1s ease;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-slide.active {
-  opacity: 1;
+  background-color: rgba(141, 121, 121, 0.5); /* Adjust overlay color for better contrast */
   z-index: 1;
 }
 
-.carousel-title-container {
+/* Arrow container for centering */
+.carousel-arrow-container {
   position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7); /* Arrière-plan semi-transparent pour le contraste */
-  padding: 15px 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 80%;
-}
-
-.carousel-title {
-  font-size: 24px; /* Taille de police plus grande */
-  font-weight: bold;
-  color: #FFFFFF; /* Couleur blanche pour le texte */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Ombre pour améliorer la lisibilité */
-  margin: 0;
-}
-
-.carousel-content {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.carousel-content h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  color: #ffffff;
-  font-size: 36px;
-  margin: 0;
-}
-
-.carousel-controls {
-  position: absolute;
-  bottom: 20px;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure it appears above the overlay */
 }
 
-.carousel-indicator {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Arrow styling */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-top: 60px solid white; /* Arrow color */
+  animation: bounce 1.5s infinite; /* Bouncing animation */
 }
 
-.carousel-indicator.active {
-  background-color: #FFD700;
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(10px); /* Move down slightly */
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .carousel-title-container {
-    padding: 10px 15px;
-    bottom: 15%;
+  .carousel-arrow-container {
+    bottom: 15%; /* Adjust arrow position for smaller screens */
   }
 
-  .carousel-title {
-    font-size: 18px; /* Ajustement de la taille pour les petits écrans */
+  .arrow-down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid white; /* Smaller arrow */
   }
 }

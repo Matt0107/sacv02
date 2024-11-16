@@ -1,26 +1,67 @@
 {
-  "navbar": {
-      "home": "Home",
-      "coding": "Web Development",
-      "tennis": "Tennis Coaching",
-      "contact": "Contact"
-  },
-  "hero": {
-      "welcome": "Welcome to our site"
-  },
-  "presentation": {
-      "title": "Our Vision",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum."
-  },
-  "coding": {
-      "title": "Web Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu."
-  },
-  "tennis": {
-      "title": "Tennis Coaching",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus."
-  },
-  "footer": {
-      "rights": "© 2024 Serve & Code - All rights reserved"
+    "navbar": {
+        "home": "Home",
+        "coding": "Web Development",
+        "tennis": "Tennis Coaching",
+        "contact": "Contact"
+    },
+    "hero": {
+        "welcome": "Welcome"
+    },
+    "coding": {
+      "title": "My Services in Digital Development",
+      "subtitle": "Solutions tailored to the success of your digital projects",
+      "services": [
+          {
+              "title": "Digital Project Management",
+              "description": "Coordination of web projects, mobile applications, and digital platforms to meet strategic needs."
+          },
+          {
+              "title": "Custom Development",
+              "description": "Development of personalized solutions tailored to the specificities of each project, including applications and custom tools."
+          },
+          {
+              "title": "SEO Optimization",
+              "description": "Improving visibility on search engines through natural referencing and optimized pages."
+          },
+          {
+              "title": "Maintenance and Support",
+              "description": "Monitoring and maintenance of post-launch projects to ensure their sustainability and meet evolving needs."
+          },
+          {
+              "title": "Responsive Design",
+              "description": "Designing sites and applications adapted for an optimal user experience on all devices."
+          }
+      ]
+    },
+    "tennis": {
+      "title": "Build Your Success",
+      "subtitle": "A coaching service for all levels",
+      "services": [
+        {
+          "title": "Technical Analysis",
+          "description": "Evaluation of strokes, posture, and technique for tailored improvement."
+        },
+        {
+          "title": "Game Strategy",
+          "description": "Tactical advice to better read the game, anticipate, and optimize performance."
+        },
+        {
+          "title": "Mental Training",
+          "description": "Building mental resilience to better manage stress and stay focused."
+        },
+        {
+          "title": "Individual Sessions",
+          "description": "Personalized coaching for tailored support according to each player's needs."
+        },
+        {
+          "title": "Group Training",
+          "description": "Group sessions to foster cohesion and team spirit while having fun."
+        }
+      ]
+    },
+    "footer": {
+        "rights": "© 2024 Serve & Code - All rights reserved"
+    }
   }
-}
+  

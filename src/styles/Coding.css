@@ -63,11 +63,8 @@
     align-items: flex-start;
     gap: 15px;
     background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 15px;
     transition: transform 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .coding-service-card:hover {

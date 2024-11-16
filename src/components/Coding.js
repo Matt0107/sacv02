@@ -1,7 +1,7 @@
 // src/components/Coding.js
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaProjectDiagram, FaCode, FaHtml5, FaCropAlt, FaServer, FaTools, FaMobileAlt } from 'react-icons/fa';
+import { FaLaptop, FaCode, FaHtml5, FaCropAlt, FaServer, FaTools, FaMobileAlt } from 'react-icons/fa';
 import '../styles/Coding.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,12 +19,9 @@ function Coding() {
     const services = t('coding.services', { returnObjects: true });
 
     const icons = [
-        <FaProjectDiagram className="coding-service-icon" />,
+        <FaLaptop className="coding-service-icon" />,
         <FaCropAlt className="coding-service-icon" />,
         <FaCode className="coding-service-icon" />,
-        <FaHtml5 className="coding-service-icon" />,
-        <FaMobileAlt className="coding-service-icon" />,
-        <FaServer className="coding-service-icon" />,
         <FaTools className="coding-service-icon" />,
         <FaMobileAlt className="coding-service-icon" />
     ];

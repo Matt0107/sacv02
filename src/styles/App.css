@@ -6,7 +6,7 @@ body {
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px; /* Taille de police de base */
     line-height: 1.5;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+    overflow-x: unset; /* Permet le fonctionnement correct du menu */
 }
 
 * {
@@ -17,6 +17,7 @@ img {
     max-width: 100%; /* Les images ne dépassent jamais la largeur de leur conteneur */
     height: auto; /* Conserve les proportions */
 }
+
 
 /* Ajustements généraux pour mobile */
 @media (max-width: 768px) {
