@@ -8,7 +8,7 @@
     z-index: 1000;
     padding: 15px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -16,15 +16,25 @@
 
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.8); /* Léger background quand on défile */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour donner de la profondeur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre */
+}
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer la navbar */
+    justify-content: space-between;
 }
 
 /* Full navbar links (visible on larger screens) */
 .navbar-links {
     display: flex;
-    flex: 1;
-    justify-content: center;
     gap: 20px;
+    flex: 1;
+    justify-content: center; /* Centrer les liens */
 }
 
 .navbar-links a {
@@ -41,10 +51,10 @@
 .navbar-links a::after {
     content: '';
     position: absolute;
-    bottom: -2px; /* Distance sous le texte */
+    bottom: -2px;
     left: 0;
     width: 0;
-    height: 2px; /* Épaisseur du surlignement */
+    height: 2px;
     background-color: currentColor; /* Même couleur que le texte */
     transition: width 0.4s ease;
 }
@@ -53,14 +63,16 @@
     width: 100%; /* Le surlignement s'étend sur toute la largeur */
 }
 
-/* Language switcher for large screens */
+/* Language switcher */
 .language-switcher {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
 }
 
-.language-switcher button {
-    background: none;
+.language-button {
+    background: transparent;
     border: 1px solid #fff;
     color: #fff;
     font-size: 1rem;
@@ -70,16 +82,37 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.language-switcher button:hover {
-    background-color: #FFD700;
-    color: black;
+/* Dropdown menu for language */
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(163, 150, 150, 0.9);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    padding: 2px;
 }
 
-/* Burger icon (hidden on large screens) */
+.language-switcher:hover .language-dropdown {
+    display: flex;
+}
+
+.language-dropdown button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Burger icon */
 .burger-icon {
     display: none;
     flex-direction: column;
-    justify-content: center;
     cursor: pointer;
     z-index: 1100;
 }
@@ -173,10 +206,6 @@
 
     .burger-icon {
         display: flex; /* Show burger icon on small screens */
-    }
-
-    .navbar {
-        justify-content: space-between; /* Reposition burger icon and other elements */
     }
 
     .language-switcher {

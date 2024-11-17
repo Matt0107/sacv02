@@ -28,16 +28,19 @@
   justify-content: center;
   align-items: center;
   z-index: 2; /* Ensure it appears above the overlay */
+  cursor: pointer;
 }
 
-/* Arrow styling */
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-top: 60px solid white; /* Arrow color */
+/* Icon styling */
+.arrow-icon {
+  font-size: 80px; /* Taille de l'icône */
+  color: white;
   animation: bounce 1.5s infinite; /* Bouncing animation */
+  transition: color 0.3s ease;
+}
+
+.arrow-icon:hover {
+  color: #FFD700; /* Changement de couleur au survol */
 }
 
 /* Bounce animation */
@@ -56,9 +59,7 @@
     bottom: 15%; /* Adjust arrow position for smaller screens */
   }
 
-  .arrow-down {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid white; /* Smaller arrow */
+  .arrow-icon {
+    font-size: 40px; /* Taille réduite de l'icône */
   }
 }
